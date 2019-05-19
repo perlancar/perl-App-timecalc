@@ -18,9 +18,9 @@ sub eval_time_expr {
 
     my ($h1, $m1, $h2, $m2);
     $str =~ s{
-                 \s* (?<h1>\d\d):(?<m1>\d\d)\s*-s*(?<h2>\d\d):(?<m2>\d\d) \s* |
-                 \s* \+(?<hplus>\d\d):(?<mplus>\d\d) \s* |
-                 \s* \-(?<hminus>\d\d):(?<mminus>\d\d) \s*
+                 \s* (?<h1>\d\d?):(?<m1>\d\d?)\s*-s*(?<h2>\d\d?):(?<m2>\d\d?) \s* |
+                 \s* \+(?<hplus>\d\d?):(?<mplus>\d\d?) \s* |
+                 \s* \-(?<hminus>\d\d?):(?<mminus>\d\d?) \s*
          }{
 
              if (defined $+{h1}) {
