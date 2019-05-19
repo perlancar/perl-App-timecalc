@@ -133,16 +133,16 @@ eval_loop();
  % timecalc
 
  > +01:20
- +01:20
+ +01:20:00
 
  > +01:20 -00:30
- +00:50
+ +00:50:00
 
- > +01:00 17:00-18:10
- +02:10
+ > +01:00 17:00-18:10:01
+ +02:10:01
 
  > +01:00 17:00-18:10 19:30-19:45 -00:04
- +02:21
+ +02:21:00
 
 
 =head1 DESCRIPTION
@@ -150,9 +150,10 @@ eval_loop();
 This is a command-line utility to perform time calculations. Currently it
 undestands a combination of:
 
- +hh:mm
+ +hh:mm(:ss)?
  -hh:mm
- hh:mm - hh:mm
+ -hh:mm(:ss)?
+ hh:mm(:ss)? - hh:mm(:ss)?
 
 
 =head1 FAQ
