@@ -1,17 +1,17 @@
-0.003   2019-05-25 (PERLANCAR)
+0.003   2019-05-25  Released-By: PERLANCAR
 
 	- No functional changes.
 
 	- [doc] Update doc.
 
 
-0.002   2019-05-19 (PERLANCAR)
+0.002   2019-05-19  Released-By: PERLANCAR
 
 	- Grok seconds.
 
 	- Fix/tweak typo in regex.
 
 
-0.001   2019-05-19 (PERLANCAR) (unreleased)
+0.001   2019-05-19 (PERLANCAR)  Released-By: unreleased
 
         - First release.
