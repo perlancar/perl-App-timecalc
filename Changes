@@ -1,3 +1,8 @@
+0.005   2020-10-26  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix] Fix parsing regression and add tests.
+
+
 0.004   2020-10-26  Released-By: PERLANCAR; Urgency: medium
 
 	- [ux] Make colon optional (e.g. +0100 for +01:00, or 1700-1810 for
