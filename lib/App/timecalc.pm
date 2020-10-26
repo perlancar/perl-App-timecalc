@@ -1,6 +1,8 @@
 package App::timecalc;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -16,9 +18,9 @@ sub eval_time_expr {
     my ($h, $m, $s) = (0, 0, 0);
 
     $str =~ s{
-                 \s* (?<h1>\d\d?):(?<m1>\d\d?)(?: :(?<s1>\d\d?))? \s*-\s* (?<h2>\d\d?):(?<m2>\d\d?)(?: :(?<s2>\d\d?))? \s* |
-                 \s* \+(?<hplus>\d\d?):(?<mplus>\d\d?)(?: :(?<splus>\d\d?))? \s* |
-                 \s* \-(?<hminus>\d\d?):(?<mminus>\d\d?)(?: :(?<sminus>\d\d?))? \s*
+                 \s* (?<h1>\d\d?):?(?<m1>\d\d?)(?: :?(?<s1>\d\d?))? \s*-\s* (?<h2>\d\d?):?(?<m2>\d\d?)(?: :?(?<s2>\d\d?))? \s* |
+                 \s* \+(?<hplus>\d\d?):?(?<mplus>\d\d?)(?: :?(?<splus>\d\d?))? \s* |
+                 \s* \-(?<hminus>\d\d?):?(?<mminus>\d\d?)(?: :?(?<sminus>\d\d?))? \s*
          }{
 
              if (defined $+{h1}) {

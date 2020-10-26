@@ -2,7 +2,9 @@
 
 ## no critic (InputOutput::RequireBriefOpen)
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -135,13 +137,25 @@ eval_loop();
  > +01:20
  +01:20:00
 
+ > +0120                                     # ditto
+ +01:20:00
+
  > +01:20 -00:30
+ +00:50:00
+
+ > +0120 -0030                               # ditto
  +00:50:00
 
  > +01:00 17:00-18:10:01
  +02:10:01
 
+ > +0100 1700-181001                         # ditto
+ +02:10:01
+
  > +01:00 17:00-18:10 19:30-19:45 -00:04
+ +02:21:00
+
+ > +0100 1700-1810 1930-1945 -0004           # ditto
  +02:21:00
 
 
@@ -150,10 +164,10 @@ eval_loop();
 This is a command-line utility to perform time calculations. Currently it
 undestands a combination of:
 
- +hh:mm(:ss)?
- -hh:mm
- -hh:mm(:ss)?
- hh:mm(:ss)? - hh:mm(:ss)?
+ +hh:?mm(:?ss)?
+ -hh:?mm
+ -hh:?mm(:?ss)?
+ hh:?mm(:?ss)? - hh:?mm(:?ss)?
 
 
 =head1 FAQ
