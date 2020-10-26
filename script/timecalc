@@ -102,7 +102,7 @@ sub eval_loop {
     while ( defined ($_ = $term->readline($prompt)) ) {
         my $res;
         if ($_ eq 'help' || $_ eq '?') {
-            say "Type time expression into the prompt, e.g.: 19:10-20:45 -00:05.";
+            say "Type time expression into the prompt, e.g.: '19:10-20:45' (or '1910-2045'), '+02:05 -00:15' (or '+205 -0015').";
             say "For more details on available features, 'man timecalc'.";
             say "";
             next;
